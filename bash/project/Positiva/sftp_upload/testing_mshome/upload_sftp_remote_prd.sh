@@ -12,8 +12,7 @@
 
 ####################### Variables ############################
 # Define el usuario con el que se va a conectarse al sftp
-USER="sap_sftp"
-GROUP="sap_sftp"
+source secure.txt
 # Indica si se va a realizar una copia
 COPY="copy"
 # Estado inicial
@@ -26,10 +25,6 @@ OS=$uname
 DAY=$(date +%d)
 # Dia y mes actual
 DAYMONTH=$(date +%d%m)
-#Usuario con el que se va a conectar al sftp remoto externo
-USER_REMOTE="inter_sftp"
-#Password para el usuario remoto
-PASSWORD_REMOTE="lapositiva123#"
 #Puerto para la conexión sftp remota
 PORT_REMOTE="2223"
 #Servidor remoto para la conexión sftp
